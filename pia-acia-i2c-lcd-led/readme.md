@@ -41,7 +41,41 @@ Example on slot 7
 ![PCB](images/PCB_apple_interface.png "Allure du PCB")
 
 ```c
-Samples examples
+Samples in BASIC
+
+Turn on the two LEDs alternately
+ 10  POKE 49404,1
+ 20  GOSUB 100
+ 30  POKE 49404,2
+ 40  GOSUB 100
+ 50  GOTO 10
+ 100 D = 200
+ 110  FOR N = 1 TO D
+ 120  NEXT N
+ 130  RETURN 
+
+Scan 1 TO 255 on PIA 8255 PORT A
+ 10  POKE 49395,136
+ 20  POKE 49392,255
+ 30  POKE 49393,255
+ 40  POKE 49394,255
+ 50  FOR N = 1 TO 255
+ 60  POKE 49392,N
+ 70  NEXT N
+
+Print F4GOH on LCD
+ 10 CDE = 49402
+ 20 DA = 49403
+ 30  POKE CDE,56
+ 40  POKE CDE,12
+ 50  POKE CDE,1
+ 60  POKE CDE,6
+ 70  POKE DA,70
+ 80  POKE DA,52
+ 90  POKE DA,71
+ 100  POKE DA,79
+ 110  POKE DA,72
+
 ```
 
 
