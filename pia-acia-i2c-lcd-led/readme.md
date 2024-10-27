@@ -34,11 +34,21 @@ Example on slot 7
 |C0FE|	free|	49406|
 |C0FF|	free|	49407|
 
+## Apple IIe pinout:
+
 ![PCB](images/pinout.png "Pinout")
+
+## Card with LCD:
 
 ![LCD](images/apple_low.jpg "Avec l'afficheur LCD")
 
+## PCB card:
+
 ![PCB](images/PCB_apple_interface.png "Allure du PCB")
+
+## LED test pia card:
+
+![PCB](images/adapt_led.png "Allure du PCB LED")
 
 ```c
 Samples in BASIC
